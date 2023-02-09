@@ -9,7 +9,6 @@
 // let person1=3
 // let $function=3
 
-
 /////////////// data type of //////////////////
 // let script=true;
 // console.log(script)
@@ -55,7 +54,6 @@
 
 // func()
 
-
 ///////////////////////// basic operators /////////////
 
 // math
@@ -82,9 +80,8 @@
 // console.log(2>8)
 // console.log(lastname>firstName)
 
-
 ///////////////////////// operator precedence ////////////////
- 
+
 //////////////////////// Coding challenge 1//////////////////
 // task 1
 
@@ -114,16 +111,29 @@
 // console.log("John BMI 2", BMIjohn2);
 // console.log("Mark and John", markHinerBMI2);
 
-
 /////////////////////// string and template ////////////
 
-const firstName='Jamshid';
-const ageYear=2000;
-const nowYear=2023;
-const job='programmer';
+// const firstName='Jamshid';
+// const ageYear=2000;
+// const nowYear=2023;
+// const job='programmer';
 
-console.log('My name is '+firstName+','+(nowYear-ageYear)+' years old '+job+'!')
-// template
-console.log(`My name is ${firstName},${nowYear-ageYear} years old ${job}! `)
-// \n 
-console.log(`My name is Jamshid.\nMy lastname Xatamov.`)
+// console.log('My name is '+firstName+','+(nowYear-ageYear)+' years old '+job+'!')
+// // template
+// console.log(`My name is ${firstName},${nowYear-ageYear} years old ${job}! `)
+// // \n
+// console.log(`My name is Jamshid.\nMy lastname Xatamov.`)
+
+////////////////////// if else statements //////////////////
+
+const age1 = 23;
+const age2 = 34;
+
+if(age1<=age2){
+  console.log('Jamshid has got a driving license 🚗')
+  var a=3
+  let b=9
+} else{
+  console.log(`Jamshid has not got a driving license 🤦‍♂️. Your young is ${age1} !`)
+}
+console.log(a);
