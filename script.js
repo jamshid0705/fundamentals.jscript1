@@ -174,16 +174,33 @@
 /////////////////////// Type convertion and coercion ////////////////
 // type conversion
 
-const a='2345'
-console.log(typeof (a+2), a+9, a+'l')
-console.log(Number(a)+200)
-console.log(Number('a'))
-console.log(String(1234))
+// const a='2345'
+// console.log(typeof (a+2), a+9, a+'l')
+// console.log(Number(a)+200)
+// console.log(Number('a'))
+// console.log(String(1234))
 
-// type coercion
+// // type coercion
 
-console.log('23'+34)
-console.log(('34'-9-'6'/2)*3)
-console.log('3'>7)
-console.log('34'==34)
-console.log('s'>-98)
+// console.log('23'+34)
+// console.log(('34'-9-'6'/2)*3)
+// console.log('3'>7)
+// console.log('34'==34)
+// console.log('s'>-98)
+
+//////////////////////////// Truhy and falsy values ////////////////////
+// falsy values 0, '', undefined, null, NaN
+
+let a
+console.log(Boolean (a),a)
+let b=''
+console.log(Boolean(b),b)
+console.log(Boolean(a+2), a+2)
+console.log(Boolean(0),0)
+console.log(Boolean(null),null)
+
+console.log(Number(a+8),a+8)
+let c={
+}
+console.log(c)
+
