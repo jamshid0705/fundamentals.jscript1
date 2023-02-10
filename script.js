@@ -126,14 +126,64 @@
 
 ////////////////////// if else statements //////////////////
 
-const age1 = 23;
-const age2 = 34;
+// const age1 = 23;
+// const age2 = 34;
 
-if(age1<=age2){
-  console.log('Jamshid has got a driving license 🚗')
-  var a=3
-  let b=9
-} else{
-  console.log(`Jamshid has not got a driving license 🤦‍♂️. Your young is ${age1} !`)
-}
-console.log(a);
+// if(age1<=age2){
+//   console.log('Jamshid has got a driving license 🚗')
+//   var a=3
+//   let b=9
+// } else{
+//   console.log(`Jamshid has not got a driving license 🤦‍♂️. Your young is ${age1} !`)
+// }
+// console.log(a);
+
+
+//////////////// Coding challenge 2 //////////////////////
+//task 1
+
+// let markw1=78
+// let markh1=1.69
+// let johnw1=92
+// let johnh1=1.95
+
+// let BMImark1=markw1/(markh1**2)
+// let BMIjohn1=johnw1/(johnh1**2)
+// console.log('Task 1')
+// if(BMImark1>BMIjohn1){
+//   console.log(`Mark's BMI (${BMImark1}) is higher than John's (${BMIjohn1})`)
+// } else{
+//   console.log(`John's BMI (${BMIjohn1}) is higher than Mark's (${BMImark1})`);
+// }
+// // task 2
+
+// let markw2 = 95;
+// let markh2 = 1.88;
+// let johnw2 = 85;
+// let johnh2 = 1.76;
+
+// let BMImark2 = markw2 / (markh2 ** 2);
+// let BMIjohn2 = johnw2 / (johnh2 ** 2);
+// console.log("Task 2");
+// if (BMImark2 > BMIjohn2) {
+//   console.log(`Mark's BMI (${BMImark2}) is higher than John's (${BMIjohn2})`);
+// } else {
+//   console.log(`John's BMI (${BMIjohn2}) is higher than Mark's (${BMImark2})`);
+// }
+
+/////////////////////// Type convertion and coercion ////////////////
+// type conversion
+
+const a='2345'
+console.log(typeof (a+2), a+9, a+'l')
+console.log(Number(a)+200)
+console.log(Number('a'))
+console.log(String(1234))
+
+// type coercion
+
+console.log('23'+34)
+console.log(('34'-9-'6'/2)*3)
+console.log('3'>7)
+console.log('34'==34)
+console.log('s'>-98)
