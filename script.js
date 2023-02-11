@@ -138,7 +138,6 @@
 // }
 // console.log(a);
 
-
 //////////////// Coding challenge 2 //////////////////////
 //task 1
 
@@ -191,16 +190,46 @@
 //////////////////////////// Truhy and falsy values ////////////////////
 // falsy values 0, '', undefined, null, NaN
 
-let a
-console.log(Boolean (a),a)
-let b=''
-console.log(Boolean(b),b)
-console.log(Boolean(a+2), a+2)
-console.log(Boolean(0),0)
-console.log(Boolean(null),null)
+// let a
+// console.log(Boolean (a),a)
+// let b=''
+// console.log(Boolean(b),b)
+// console.log(Boolean(a+2), a+2)
+// console.log(Boolean(0),0)
+// console.log(Boolean(null),null)
 
-console.log(Number(a+8),a+8)
-let c={
-}
-console.log(c)
+// console.log(Number(a+8),a+8)
+// let c={
+// }
+// console.log(c)
 
+//////////////// == and === ///////////////////
+
+// let a="12"
+// if(a==12){
+//   console.log("==",typeof a)
+// }
+// if(a===12){
+//   console.log("===", typeof a)
+// }
+
+// // const favourite=Number(prompt("What is your fovourite number !"))
+// // if(favourite===23){
+// //   console.log(`Uraaa! You can find ! this number ${favourite}`)
+// // }
+// console.log(typeof false)
+
+/////////////////// boolean logic ///////////////////
+// &&
+console.log('And')
+console.log(true && true);
+console.log(false && true);
+console.log(true && false);
+console.log(false && false);
+
+// ||
+console.log('Or')
+console.log(true || true);
+console.log(false || true);
+console.log(true || false);
+console.log(false || false);
