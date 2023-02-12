@@ -221,15 +221,47 @@
 
 /////////////////// boolean logic ///////////////////
 // &&
-console.log('And')
-console.log(true && true);
-console.log(false && true);
-console.log(true && false);
-console.log(false && false);
+// console.log('And')
+// console.log(true && true && true);
+// console.log(false && true && true);
+// console.log(true && false && true);
+// console.log(false && false && true);
 
-// ||
-console.log('Or')
-console.log(true || true);
-console.log(false || true);
-console.log(true || false);
-console.log(false || false);
+// // ||
+// console.log('Or')
+// console.log(true || true);
+// console.log(false || true);
+// console.log(true || false);
+// console.log(false || false);
+
+/////////////////// coding challenge 3 //////////////
+
+const teamD1 = Number(prompt("Firts team`s write first score"));
+const teamD2 = Number(prompt("Firts team`s write second score"));
+const teamD3 =Number( prompt("Firts team`s write third score"));
+
+const teamK1 = Number(prompt("Second team`s write first score"));
+const teamK2 =Number( prompt("Second team`s write second score"));
+const teamK3 =Number( prompt("Second team`s write third score"));
+
+const averageScoreTeamD = (teamD1 + teamD2 + teamD3) / 3;
+const averageScoreTeamK = (teamK1 + teamK2 + teamK3) / 3;
+console.log(averageScoreTeamD)
+console.log(averageScoreTeamK)
+if (averageScoreTeamD > averageScoreTeamK && averageScoreTeamD >= 100) {
+  console.log(
+    `Dolphins team has wined! Congratulation🎉 Team score ${averageScoreTeamD}`
+  );
+} else if (averageScoreTeamK > averageScoreTeamD && averageScoreTeamK >= 100) {
+  console.log(
+    `Koalas team has wined! Congratulation🎉 Team score ${averageScoreTeamK}`
+  );
+} else if (
+  averageScoreTeamD === averageScoreTeamK &&
+  averageScoreTeamD >= 100 &&
+  averageScoreTeamK >= 100
+) {
+  console.log("Both teams scores are the same score! Draw !");
+} else {
+  console.log("No team wins the trophy !");
+}
