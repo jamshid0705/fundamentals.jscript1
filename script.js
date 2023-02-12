@@ -236,32 +236,54 @@
 
 /////////////////// coding challenge 3 //////////////
 
-const teamD1 = Number(prompt("Firts team`s write first score"));
-const teamD2 = Number(prompt("Firts team`s write second score"));
-const teamD3 =Number( prompt("Firts team`s write third score"));
+// const teamD1 = Number(prompt("Firts team`s write first score"));
+// const teamD2 = Number(prompt("Firts team`s write second score"));
+// const teamD3 =Number( prompt("Firts team`s write third score"));
 
-const teamK1 = Number(prompt("Second team`s write first score"));
-const teamK2 =Number( prompt("Second team`s write second score"));
-const teamK3 =Number( prompt("Second team`s write third score"));
+// const teamK1 = Number(prompt("Second team`s write first score"));
+// const teamK2 =Number( prompt("Second team`s write second score"));
+// const teamK3 =Number( prompt("Second team`s write third score"));
 
-const averageScoreTeamD = (teamD1 + teamD2 + teamD3) / 3;
-const averageScoreTeamK = (teamK1 + teamK2 + teamK3) / 3;
-console.log(averageScoreTeamD)
-console.log(averageScoreTeamK)
-if (averageScoreTeamD > averageScoreTeamK && averageScoreTeamD >= 100) {
-  console.log(
-    `Dolphins team has wined! Congratulation🎉 Team score ${averageScoreTeamD}`
-  );
-} else if (averageScoreTeamK > averageScoreTeamD && averageScoreTeamK >= 100) {
-  console.log(
-    `Koalas team has wined! Congratulation🎉 Team score ${averageScoreTeamK}`
-  );
-} else if (
-  averageScoreTeamD === averageScoreTeamK &&
-  averageScoreTeamD >= 100 &&
-  averageScoreTeamK >= 100
-) {
-  console.log("Both teams scores are the same score! Draw !");
-} else {
-  console.log("No team wins the trophy !");
+// const averageScoreTeamD = (teamD1 + teamD2 + teamD3) / 3;
+// const averageScoreTeamK = (teamK1 + teamK2 + teamK3) / 3;
+// console.log(averageScoreTeamD)
+// console.log(averageScoreTeamK)
+// if (averageScoreTeamD > averageScoreTeamK && averageScoreTeamD >= 100) {
+//   console.log(
+//     `Dolphins team has wined! Congratulation🎉 Team score ${averageScoreTeamD}`
+//   );
+// } else if (averageScoreTeamK > averageScoreTeamD && averageScoreTeamK >= 100) {
+//   console.log(
+//     `Koalas team has wined! Congratulation🎉 Team score ${averageScoreTeamK}`
+//   );
+// } else if (
+//   averageScoreTeamD === averageScoreTeamK &&
+//   averageScoreTeamD >= 100 &&
+//   averageScoreTeamK >= 100
+// ) {
+//   console.log("Both teams scores are the same score! Draw !");
+// } else {
+//   console.log("No team wins the trophy !");
+// }
+
+/////////////// switch statemant //////////////////
+
+const score = 102;
+if(score >= 0 && score <= 100){
+  switch (score) {
+  case score >= 60 && score < 71:
+    console.log(`Your grades is 3 !`);
+    break;
+  case score>=  71 && score<85:
+    console.log(`Your grades is 4 !`);
+    break;
+  case score>=85:
+    console.log('Your grades is 5 !');
+    break;
+  default:
+    console.log("You can not pass the exam ! Sorry !")
+  }
+
+} else{
+  console.log("Your score is undefined !", score)
 }
