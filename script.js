@@ -291,9 +291,33 @@
 // 27 /////////////////// statemant and expressions ////////////////////
 // 28 /////////////////// condition operators ///////////////////
 
-const age =5;
-age >=45? console.log('This man is old !'):console.log('This man is young !')
+// const age =5;
+// age >=45? console.log('This man is old !'):console.log('This man is young !')
 
-const person=age>=30?'This person is woman':'This person is man'
-console.log(person)
+// const person=age>=30?'This person is woman':'This person is man'
+// console.log(person)
   
+// 29 //////////////////// coding challenge ///////////////////////
+
+const  bill=56;
+let tip, total;
+if(bill>=50 && bill<=300 && bill>=0){
+  tip=bill*0.15;
+  total=tip+bill;
+} else if(bill>=0){
+  tip=bill*0.2;
+  total=bill+tip
+}
+console.log(`The bill is ${bill}, the tip is ${tip}, the total is ${total}`)
+
+const tip1 =
+  bill >= 50 && bill <= 300 && bill >= 0
+    ? `The bill is ${bill}, the tip is ${bill * 0.15}, the total is ${
+        bill + bill * 0.15
+      }`
+    : `The bill is ${bill}, the tip is ${bill * 0.2}, the total is ${
+        bill + bill * 0.2
+      }`;
+
+console.log(tip1)      
+
