@@ -268,22 +268,32 @@
 
 /////////////// switch statemant //////////////////
 
-const score = 102;
-if(score >= 0 && score <= 100){
-  switch (score) {
-  case score >= 60 && score < 71:
-    console.log(`Your grades is 3 !`);
-    break;
-  case score>=  71 && score<85:
-    console.log(`Your grades is 4 !`);
-    break;
-  case score>=85:
-    console.log('Your grades is 5 !');
-    break;
-  default:
-    console.log("You can not pass the exam ! Sorry !")
-  }
+// const score = 102;
+// if(score >= 0 && score <= 100){
+//   switch (score) {
+//   case score >= 60 && score < 71:
+//     console.log(`Your grades is 3 !`);
+//     break;
+//   case score>=  71 && score<85:
+//     console.log(`Your grades is 4 !`);
+//     break;
+//   case score>=85:
+//     console.log('Your grades is 5 !');
+//     break;
+//   default:
+//     console.log("You can not pass the exam ! Sorry !")
+//   }
 
-} else{
-  console.log("Your score is undefined !", score)
-}
+// } else{
+//   console.log("Your score is undefined !", score)
+// }
+
+// 27 /////////////////// statemant and expressions ////////////////////
+// 28 /////////////////// condition operators ///////////////////
+
+const age =5;
+age >=45? console.log('This man is old !'):console.log('This man is young !')
+
+const person=age>=30?'This person is woman':'This person is man'
+console.log(person)
+  
